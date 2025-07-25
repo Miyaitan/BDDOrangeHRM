@@ -18,5 +18,14 @@ module.exports = defineConfig({
     specPattern: 'cypress/e2e/features/**/*.feature',
     supportFile: 'cypress/support/e2e.js',
     stepDefinitions: ['cypress/step_definitions/**/*.{js,mjs,ts,tsx}'],
+    reporter: 'cypress-mochawesome-reporter',
+    reporterOptions: {
+      reportDir: 'mochawesome-report',
+      overwrite: true,
+      html: true,
+      json: false,
+      embeddedScreenshots: true,
+      inlineAssets: true 
+    }
   },
 })
