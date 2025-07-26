@@ -52,3 +52,21 @@ BinusCypressBDD/
 - **Step definitions** (`step_definitions/*.js`) implement the steps using Cypress commands and POM classes.
 - **Page Object Model** (`pages/*.js`) encapsulates UI interactions for each page.
 - **Cypress config** sets up the BDD preprocessor and the Mochawesome reporter.
+
+---
+
+## Step by Steps
+
+1. Clone the repository
+git: https://github.com/Miyaitan/BDDOrangeHRM.git
+
+2. Install Dependencies
+- npm install
+
+3. Run Tests
+cd (Folder directory)
+- Headless: npx cypress run
+- Cypress: npx cypress open
+
+4. View Report
+- Open mochawesome-report/mochawesome.html
